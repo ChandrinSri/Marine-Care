@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: #141414;
+    font-family: "Neue Montreal";
+}
+img{
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+}
+.content{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.Container{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 1em;
+    animation: fadeOut 1s forwards;
+}
+.Container .column{
+    position: relative;
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.inner-pic {
+    width: 25px; 
+    height: 25px; 
+    border-radius: 5%; 
+    background-image: url(../splash-img/img10.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    position: absolute;
+    top: 30px; 
+    left: 30px; 
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+}
+.inner-pic:hover{
+    animation: glow;
+    animation-duration: 2.5s;
+}
+.item>p{
+    position: absolute;
+    width: 100%;
+    height: 5%;
+    top: 60px;
+    left: 20px;
+    font-size: 4px;
+    color: rgb(221, 221, 226);
+    
+}
+.name-Aeron{
+    width: 30px;
+    height: 30px;
+    border-radius: 8%;
+    position: absolute; /* Position the inner content absolutely */
+    top: 30; /* Position from the top */
+    left: 155; /* Position from the left */
+    background: rgba(255, 255, 255, 0.7); 
+    padding: 10px;    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.name-Aeron img{
+    width: 350%;
+    height: auto;
+    margin-top: -10px;
+    margin-left: -12px;
+}
+.name-Pamal{
+    width: 30px;
+    height: 30px;
+    border-radius: 8%;
+    position: absolute; 
+    top: 30; /* Position from the top */
+    left: 190; /* Position from the left */
+    background: rgba(255, 255, 255, 0.7); 
+    padding: 10px;    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: hidden;
+}
+.name-Pamal img{
+    width: 350%;
+    height: auto;
+    margin-top: -10px;
+    margin-left: -12px;
+    display: block;
+}
+
+.name-Seniru{
+    width: 30px;
+    height: 30px;
+    border-radius: 8%;
+    position: absolute; 
+    top: 65; /* Position from the top */
+    left: 155; /* Position from the left */
+    background: rgba(255, 255, 255, 0.7); 
+    padding: 10px;    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: hidden;
+
+}
+.name-Seniru img{
+    width: 350%;
+    height: auto;
+    margin-top: -10px;
+    margin-left: -12px;
+}
+.name-Nethini{
+    width: 30px;
+    height: 30px;
+    border-radius: 8%;
+    position: absolute; 
+    top: 65; /* Position from the top */
+    left: 190; /* Position from the left */
+    background: rgba(255, 255, 255, 0.7); 
+    padding: 10px;    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.name-Nethini img{
+    width: 350%;
+    height: auto;
+    margin-top: -9px;
+    margin-left: -12px;
+}
+
+
+
+
+
+
+
+
+.column .item{
+    position: relative;
+    flex: 1;
+    width: 100%;
+    background: grey;
+    overflow: hidden;
+}
+
+.c-1,.c-3,.c-5{
+    top: 100%;
+}
+
+.c-1 .item,
+.c-3 .item,
+.c-5 .item{
+    top: 100%;
+   
+   
+   }
+.c-2 .item,
+.c-4 .item{
+    top: 100%;
+}
+@keyframes glow{
+    25%{box-shadow: 0px 0px 25px whitesmoke;}
+}
+

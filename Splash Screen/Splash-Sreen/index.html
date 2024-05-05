@@ -1,0 +1,124 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="Container">
+        <div class="column c-1">
+            <div class="item"><img src="../splash-img/img1.jpg" alt="Pictures slides before site loeading"></div>
+            <div class="item"><img src="../splash-img/img2.jpg" alt=""></div>
+            <div class="item"><img src="../splash-img/img3.jpg" alt=""></div>
+            <div class="item"><img src="../splash-img/img14.jpeg" alt=""></div>
+            
+        </div>                  <!--Didnt created alt text bcz these animated images gonna end in 4 seconds-->
+        <div class="column c-2">
+            <div class="item"><img src="../splash-img/img4.jpg" alt=""></div>
+            <div class="item"><img src="../splash-img/img7.jpg" alt=""></div>
+            <div class="item"><img src="../splash-img/img5.jpg" alt=""></div>
+            <div class="item"><img src="../splash-img/img6.jpg" alt=""></div>
+           
+        </div>
+        <div class="column c-3">
+            <div class="item"><img src="../splash-img/img7.jpg" alt=""></div>
+            <div class="item"><img src="../splash-img/img8.jpg" alt=""></div>
+            <div class="item">
+                <img src="../splash-img/asd.jpg" alt="Under Sea">
+                <div class="inner-pic"></div>
+                <p class="innertext">"Life below water" is the focus of <em>Sustainable Development Goal 14</em>,<br> 
+                        one of the 17 SDGs that the United Natiions set forth in 2015.<br>
+                        "Conserve and sustainably  the oceans, seas, and marine resources<br> for sustainable development" 
+                        is the official language.</p>
+                <div class="name-Aeron imgs">
+                     <img src="../splash-img/New folder/1.png" alt="">
+                </div>
+                <div class="name-Pamal">
+                    <img src="../splash-img/New folder/2.png" alt="">
+                    
+                </div>
+                <div class="name-Seniru">
+                    <img src="../splash-img/New folder/3.png" alt="">
+                   
+                </div>
+                <div class="name-Nethini">
+                    <img src="../splash-img/New folder/4.png" alt="">
+                    
+                </div>
+            </div>
+            <div class="item"><img src="../splash-img/img11.jpg" alt=""></div>
+            <div class="item"><img src="../splash-img/img2.jpg" alt=""></div>
+        </div>
+        <div class="column c-4">
+            <div class="item"><img src="../splash-img/img11.jpg" alt=""></div>
+            <div class="item"><img src="../splash-img/img12.jpg" alt=""></div> <!--These images are the rollout animation comes with-->
+            <div class="item"><img src="../splash-img/img13.jpg" alt=""></div>
+            <div class="item"><img src="../splash-img/img6.jpg" alt=""></div>
+            
+        </div>
+        <div class="column c-5">
+            <div class="item"><img src="../splash-img/img3.jpg" alt=""></div>
+            <div class="item"><img src="../splash-img/img7.jpg" alt=""></div>
+            <div class="item"><img src="../splash-img/img11.jpg" alt=""></div>
+            <div class="item"><img src="../splash-img/img12.jpg" alt=""></div>
+            
+        </div>
+
+
+
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script>
+        let Timeline=gsap.timeline({delay:0});
+        Timeline.to(".column",{
+        top: 0,
+        duration: 3,                 //in here this creates a timeline to each image column and items to send 
+        ease: "power4.inOut"         //out with animation with a differnt time
+        })
+        Timeline.to(".c-1 .item",{
+            top:0,
+            stagger: 0.35,
+            duration: 2,
+            ease: "power4.inOut"
+        },"-=2")
+        Timeline.to(".c-2 .item",{
+            top:0,
+            stagger: -0.25,
+            duration: 2,
+            ease: "power4.inOut"
+        },"-=4")
+        Timeline.to(".c-3 .item",{
+            top:0,
+            stagger: 0.35,
+            duration: 2,
+            ease: "power4.inOut"
+        },"-=4")
+        Timeline.to(".c-4 .item",{
+            top:0,
+            stagger: -(0.25),
+            duration: 2,
+            ease: "power4.inOut"
+        },"-=4")
+        Timeline.to(".c-5 .item",{
+            top:0,
+            stagger: 0.35,
+            duration: 2,
+            ease: "power4.inOut"
+        },"-=4")
+        Timeline.to(".Container",{
+            scale: 6,
+            duration: 3,
+            ease: "power4.inOut"
+        }, "-=2")
+
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(function() {
+              window.location.href = '../../Home/home.html'; // Redirect to home.html after animation which is for student 2
+            }, 8000); // 4 seconds delay after the animation ends
+        });
+    </script>
+    
+</body>
+</html>
