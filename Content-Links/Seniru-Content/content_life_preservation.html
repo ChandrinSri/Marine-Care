@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Preservation</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.2.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+      <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="content_lp.css">
+</head>
+<body>
+    <header id="header">
+        <div class="logo">
+            <a href="#"><img src="MarineCarelight.png" alt="Logo"></a>
+          </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">About us</a>
+            <a href="#">Contact us</a>
+
+        </nav>
+        <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-user"></a>
+        </div>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <div class="Micons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+        </div>
+        <ul class="mobile-menu">
+            <li><a href="/home">Home</a></li>
+            <li><a href="/products">Products</a></li>
+            <li><a href="/about">About</a></li>
+            <li id="login"><a href="/login" >Login</a></li>
+            <li id="signup"><a href="/signup">Signup</a></li>
+          </ul>
+    
+    
+           
+    </header>
+    <div class="full-img" id="fullImgBox_of">
+        <div class="wrapper">
+        <img src="imgp.jpg" id="fullImg_of" alt="Full Image">
+        <div class="text-box">
+       <p> A Picture of Overfishing being done at a bigger level. </p>
+        </div></div>
+        <span onclick="closeFullImg_of()">&times;</span>
+    </div>
+    <div class="full-img" id="fullImgBox_hd">
+        <div class="wrapper">
+        <img src="imgp.jpg" id="fullImg_hd" alt="Full Image">
+        <div class="text-box">
+       <p> A Picture of coral reef destroyed by fishing net.</p>
+        </div></div>
+        <span onclick="closeFullImg_hd()">&times;</span>
+    </div>
+    <div class="full-img" id="fullImgBox_p">
+        <div class="wrapper">
+        <img src="imgp.jpg" id="fullImg_p" alt="Full Image">
+        <div class="text-box">
+        <p> A Picture of sea water being polluted by plastic waste.</p>
+        </div></div>
+        <span onclick="closeFullImg_p()">&times;</span>
+    </div>
+    <div class="full-img" id="fullImgBox_cc">
+        <div class="wrapper">
+        <img src="imgp.jpg" id="fullImg_cc" alt="Full Image">
+        <div class="text-box">
+        <p> A Picture of ice glacier being melted due to climate change.</p>
+        </div></div>
+        <span onclick="closeFullImg_cc()">&times;</span>
+    </div>
+    <div class="full-img" id="fullImgBox_oc">
+        <div class="wrapper">
+        <img src="imgp.jpg" id="fullImg_oc" alt="Full Image">
+        <div class="text-box">
+        <p> A Picture of Statis regarding efforts towards ocean conservation.</p>
+        </div></div>
+        <span onclick="closeFullImg_oc()">&times;</span>
+    </div>
+    <div class="full-img" id="fullImgBox_opp">
+        <div class="wrapper">
+        <img src="imgp.jpg" id="fullImg_opp" alt="Full Image">
+        <div class="text-box">
+        <p> IMO and its role in protecting the world's oceans.</p>
+        </div></div>
+        <span onclick="closeFullImg_opp()">&times;</span>
+    </div>
+    <div class="full-img" id="fullImgBox_gip">
+        <div class="wrapper">
+        <img src="imgp.jpg" id="fullImg_gip" alt="Full Image">
+        <div class="text-box">
+        <p>A deeper dive into the blue economy: the role of the diving sector in conservation and sustainable development goals.</p>
+        </div></div>
+        <span onclick="closeFullImg_gip()">&times;</span>
+    </div>
+    <section class="topic">
+    <h1><br>Life Preservation in the Ocean</h1></section>
+<p class="class2"><i>The ocean, covering more than 70% of the Earth's surface, is a vast and dynamic ecosystem teeming with life. 
+From the smallest plankton to the largest whales, marine organisms play crucial roles in regulating our planet's climate, producing oxygen, 
+and providing sustenance for millions of people worldwide. However, this extraordinary biodiversity is facing unprecedented threats from human activities, 
+including overfishing, habitat destruction, pollution, and climate change.</i></p>
+<section class="sub-topic"><h2>Challenges Facing Marine Life</h2></section>
+<dl class="class1">
+    <dt>1. Overfishing</dt>
+    <dd><img class="images" src="Images/Overfishing.jpg" alt="Overfishing Image" onclick="openFullImg_of(this.src)" >
+        <p>
+         Unregulated and unsustainable fishing practices have depleted fish stocks and disrupted marine food webs, 
+        threatening the livelihoods of coastal communities and endangering the survival of countless species.
+        </p></dd>
+    <dt>2. Habitat Destruction</dt>
+    <dd><img class="images" src="Images/Habitat_Destruction.webp" alt="Habitat Destruction Image" onclick="openFullImg_hd(this.src)">
+        <p>
+        Coastal development, bottom trawling, and other destructive activities have damaged vital marine habitats such as coral reefs, 
+        mangroves, and seagrass beds, reducing their ability to support diverse marine life.
+        </p></dd>
+    <dt>3. Pollution</dt>
+    <dd><img class="images" src="Images/Pollution.jpg" alt="Pollution Image" onclick="openFullImg_p(this.src)">
+        <p>
+        Plastic waste, chemical runoff, oil spills, and other forms of pollution contaminate marine environments, 
+        harming marine organisms and ecosystems and contributing to the decline of ocean health.
+        </p></dd>
+    <dt>4. Climate Change</dt>
+    <dd><img class="images" src="Images/Climate_change.jpg" alt="Climate Change Image" onclick="openFullImg_cc(this.src)">
+        <p>
+        Rising temperatures, ocean acidification, sea level rise, and extreme weather events associated with climate change pose significant
+        threats to marine life, disrupting ecosystems and exacerbating existing stressors.
+        </p>
+    </dd>
+</dl>
+<div class="stat">
+    <img class="stat" id="images" src="Images/ocean_conservation_stats.png" alt="Ocean Conservation Statis Image" onclick="openFullImg_oc(this.src)">
+</div>
+<section class="sub-topic"><h2>Efforts Towards Conservation</h2></section>
+<dl class="class1">
+    <dt>1. Marine Protected Areas (MPAs)</dt>
+    <dd>
+        <p>Establishing MPAs helps conserve marine biodiversity by safeguarding critical habitats, 
+        regulating human activities, and promoting sustainable resource use.<br>
+        <a href="https://oceanexplorer.noaa.gov/facts/mpas.html#:~:text=A%20marine%20protected%20area%20is,ecosystems%20services%2C%20or%20cultural%20heritage.&text=Submarine%20canyons%20and%20seamounts%20are,yet%20few%20have%20been%20explored.">
+            more info..
+        </a> </p>
+    </dd>
+    <dt>2. Sustainable Fisheries Management</dt>
+    <dd>
+        <p>Implementing science-based management strategies, such as catch limits, gear restrictions, 
+        and ecosystem-based approaches, helps rebuild fish stocks and ensure the long-term sustainability of fisheries.<br>
+        <a href="https://www.msc.org/what-we-are-doing/our-approach/what-is-sustainable-fishing">
+            more inro..
+        </a> </p>
+    </dd>
+    <dt>3. Pollution Prevention</dt>
+    <dd>
+        <p>Initiatives to reduce plastic pollution, improve waste management practices, 
+        and mitigate the impacts of pollution on marine ecosystems are essential for preserving ocean health.<br>
+        <a href="https://www.texasdisposal.com/blog/ocean-pollution-causes-effects-and-prevention/">
+            more inro..
+        </a></p>
+    </dd>
+    <dt>4. Habitat Restoraition</dt>
+    <dd>
+        <p>Restoration projects aimed at rehabilitating degraded marine habitats, such as coral reef restoration,
+        mangrove reforestation, and coastal wetland conservation, help enhance ecosystem resilience and 
+        support marine biodiversity.<br>
+        <a href="https://www.fisheries.noaa.gov/topic/habitat-conservation/how-we-restore">
+            more inro..
+        </a></p>
+    </dd>
+    <dt>5. Climate Action</dt>
+    <dd>
+        <p>Mitigating greenhouse gas emissions, promoting renewable energy sources, 
+        and implementing adaptation measures to address the impacts of climate change are critical 
+        for protecting marine ecosystems and the species that depend on them.<br>
+        <a href="https://oceanpanel.org/publication/ocean-solutions-to-climate-change/#:~:text=Climate%20action%20is%20vital%20for,goals%20of%20the%20Paris%20Agreement.">
+            more inro..
+        </a></p>
+    </dd>
+</dl>
+
+<section class="sub-topic"><h2>Global Initiatives and Partnerships</h2></section>
+<p class="class2">Global initiatives and partnerships play a crucial role in coordinating efforts to preserve and protect marine life worldwide. 
+Here are some prominent initiatives and partnerships focused on ocean conservation</p>
+<dl class="class1">
+    <dt>1. <a href="https://sdgs.un.org/goals/goal14">Nations Sustainable Development Goal 14 (SDG14)</a> </dt>
+    <dd><p>
+        SDG 14 aims to "Conserve and sustainably use the oceans, seas, and marine resources for sustainable development."
+        It encompasses targets related to marine conservation, sustainable fisheries, pollution reduction, 
+        and the establishment of marine protected areas.</p>
+    </dd>
+    <dt>2. <a href="https://oceanhealthindex.org/">The Ocean Health Index (OHI)</a></dt>
+    <dd><p>
+        The OHI is a scientific assessment framework that measures the health of ocean ecosystems 
+        based on various indicators, including biodiversity, habitat condition, and ecosystem services. 
+        It provides valuable insights for policymakers, stakeholders, and conservation practitioners 
+        to prioritize and guide ocean conservation efforts.</p>
+    </dd>
+    <dt>3.<a href="https://goosocean.org/"> Global Ocean Observing System (GOOS)</a></dt>
+    <dd><p>
+        GOOS is a collaborative international program aimed at improving the quality, quantity, 
+        and timeliness of ocean observations to support informed decision-making and sustainable management of marine resources.
+        It involves partnerships between governments, research institutions, and other stakeholders to enhance ocean monitoring and data sharing.</p>
+    </dd>
+    <dt>4. <a href="https://www.gpmarinelitter.org/">The Global Partnership for Marine Litter (GPML)</a></dt>
+    <dd><p>
+        GPML is a multi-stakeholder initiative led by the United Nations Environment Programme (UNEP) 
+        that brings together governments, industry, academia, and civil society to address marine litter and plastic pollution. 
+        It supports capacity-building, knowledge-sharing, and innovative solutions to prevent marine litter and promote circular economy approaches.</p>
+    </dd><div class="gip1">
+        <img class="stat" id="images" src="Images/Oceans_Projects_Portfolio.jpg" alt="Oceans Projects Portfolio Image" width="300px" height="auto" onclick="openFullImg_opp(this.src)">
+        <img class="gip2" id="images" src="Images/g_i_p.jpg" alt="Global Initiatives and Partnerships Image"width="300px" height="auto"onclick="openFullImg_gip(this.src)">  
+        </div>
+    <dt>5.<a href="https://www.coraltriangleinitiative.org/"> The Coral Triangle Initiative (CTI)</a></dt>
+    <dd><p>
+        CTI is a regional partnership among six countries in 
+        Southeast Asia (Indonesia, Malaysia, Papua New Guinea, Philippines, Solomon Islands, and Timor-Leste) aimed 
+        at conserving marine biodiversity, promoting sustainable fisheries, and enhancing climate resilience in the Coral Triangle region, 
+        which is considered the global epicenter of marine biodiversity.</p>
+    </dd>
+    <dt>6. <a href="https://www.globalpartnershipforoceans.org/">The Global Partnership for Oceans (GPO)</a></dt> 
+    <dd><p>
+        GPO is a coalition of governments, international organizations, NGOs, 
+        and private sector partners committed to addressing major challenges facing the world's oceans, 
+        including overfishing, habitat degradation, pollution, and climate change. It supports collaborative action, knowledge exchange, 
+        and investment in ocean conservation and sustainable management.</p>
+    </dd>
+    <dt>7. <a href="https://icriforum.org/">The International Coral Reef Initiative (ICRI)</a></dt>
+    <dd><p>
+        ICRI is a partnership among governments, NGOs, and international organizations focused on 
+        the conservation and sustainable management of coral reefs worldwide. It facilitates cooperation, 
+        capacity-building, and the implementation of best practices to protect and restore coral reef ecosystems.</p>
+    </dd> 
+    <dt>8. <a href="http://www.goa-on.org/">The Global Ocean Acidification Observing Network (GOA-ON)</a></dt>
+    <dd><p>
+        GOA-ON is a collaborative effort to monitor and understand the impacts of ocean acidification on marine ecosystems and species. 
+        It provides data and information to support adaptation and mitigation strategies and promotes scientific research and capacity-building in affected regions.</p>
+    </dd>
+</dl>
+<footer>
+    
+    <div class="footerContainer">
+        <div class="socialIcons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-google-plus"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="footerNav">
+            <ul><li><a href="">Home</a></li>
+                <li><a href="">Shop</a></li>
+                <li><a href="">Our Team</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Feedback</a></li>
+            </ul>
+        </div>
+        
+    </div>
+</footer>
+
+<div class="footerBottom">
+    <p>Copyright &copy;2024  Designed by <span class="designerGroup">Group 11 | Group 8 </span></p>
+ </div>
+
+<script src="content_lp.js"></script>
+</body>
+</html>
