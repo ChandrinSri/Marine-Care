@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="prog_bar.css">
+       <!-- Font Awesome CDN Link-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!--flaticon -->
+<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.2.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" crossorigin="anonymous">
+</head>
+<body class="body1">
+    <header id="header">
+        <div class="logo">
+            <a href="#"><img src="MarineCarelight.png" alt="Logo"></a>
+          </div>
+        <nav>
+            <a href="../Home/home.html">Home</a>
+            <a href="../Shop/index.html">Shop</a>
+            <a href="../About us/team.html">About us</a>
+            <a href="../Gallery/gallery.html">Gallery</a>
+
+        </nav>
+        <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-user"></a>
+        </div>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <div class="Micons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+        </div>
+        <ul class="mobile-menu">
+            <li><a href="/home">Home</a></li>
+            <li><a href="/products">Products</a></li>
+            <li><a href="/about">About</a></li>
+            <li id="login"><a href="/login" >Login</a></li>
+            <li id="signup"><a href="/signup">Signup</a></li>
+          </ul>
+    
+    
+           
+    </header>
+    <div class="container3">
+        <div id = "cont"> 
+            <div id="stepBar_3">75%</div>
+        </div>
+        <form class = "Personaldetail">
+            <h4> Availability and contact </h4>
+            <input type="text" id="n10" placeholder="Minimum volunteering hours(per week) " onchange="updateProgress_3(10)"><br>
+            <input type="tel" id="n11" placeholder="Telephone number" onchange="updateProgress_3(11)" required><br>
+            <input type="email" id="n12" placeholder="Email_Address" onchange="updateProgress_3(12)" required><br>
+            <p id = "msg10"></p>
+            <p id = "msg11"></p>
+            <p id = "msg12"></p>
+            <button type="button" onclick="newfuncton()">Display</button>
+            <div class="button-box">
+                <a href = "prog_bar1.html"><button type="button" class="h1"> Back </button></a> 
+                <a href="#next4"><button id="nextButton" type="button" class="h1"> Next </button></a>
+            </div>
+        </form>
+    </div>
+<footer>
+    <div class="footerContainer">
+        <div class="socialIcons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-google-plus"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="footerNav">
+            <ul><li><a href="../Home/home.html">Home</a></li>
+                <li><a href="../Shop/index.html">Shop</a></li>
+                <li><a href="../About us/team.html">About Us</a></li>
+                <li><a href="../Blog/">Blog</a></li>
+                <li><a href="../Feedback/feedback.html">Feedback</a></li>
+            </ul>
+        </div>
+        <div class="footerBottom">
+            <p>Copyright &copy;2024  Designed by <span class="designerGroup">Group 11 | Group 8 </span></p>
+        </div>
+    </div>
+</footer>
+   <script>
+                document.getElementById('nextButton').addEventListener('click', function() {
+        Swal.fire({
+            title: "You are Redirecting to Home!!",
+            icon: "success"
+        }).then((result) => {
+            if (result.isConfirmed) {
+            // Redirect to another page
+            window.location.href = "your_destination_page_url_here";
+            }
+        });
+        });
+
+        function newfuncton(){
+            let n10 = document.querySelector("#n10");
+            let msg10 = document.querySelector("#msg10");
+            msg10.innerHTML = "Minimum volunteering hours(per week) :- " +  n10.value;
+            let n11 = document.querySelector("#n11");
+            let msg11 = document.querySelector("#msg11");
+            msg11.innerHTML = "Telephone number :- " +  n11.value;
+            let n12 = document.querySelector("#n12");
+            let msg12 = document.querySelector("#msg12");
+            msg12.innerHTML = "Email_Address :- " +  n12.value;
+
+        }
+    </script>
+    <script src="prog_bar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+</html>
+    
