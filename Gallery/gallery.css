@@ -1,0 +1,452 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+body{
+  background: #ecf4fb;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;  
+}
+.img-gallery {
+  width: 80%; /* Adjust the width as needed */
+  margin: 100px auto; /* Center the grid vertically and horizontally */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+  /* Other styles remain the same */
+}
+
+
+.img-gallery img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px; /* Adding rounded corners for a similar look */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow */
+  transition: transform 0.2s ease; /* Adding a smooth hover effect */
+  cursor: pointer;
+  box-shadow: 3px 3px 5px black;
+}
+.img-gallery img:hover{
+  transform: scale(1.5) ;
+  border-radius: 20px;
+  box-shadow: 0 32px 75px rgba(68,77,156,0.2);
+}
+.full-img{
+  width: 100%;
+  height: 90vh;
+  background: rgb(0,0,0,0.9) ;
+  position: fixed;
+  top:100px;
+  left: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  overflow: auto; /* This enables both horizontal and vertical scrolling */
+    /* or */
+  overflow-x: auto; /* This enables horizontal scrolling only */
+    /* or */
+  overflow-y: auto;
+}
+.full-img img{
+  width: 90%;
+  max-width :500px; 
+  float: left;
+  border:  3px solid #fff;
+  border-radius: 10px;
+  margin: 15px;
+  margin-top: 50px;
+
+}
+.full-img span{
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+h1{
+    font-weight: normal;
+    font-size: 35px;
+    position: relative;
+    margin:40px 0px;
+  
+}
+h1::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: crimson;
+  bottom:-10px;
+  left:50%;
+  transform: translate(-50%);
+  animation: animate 4s linear infinite;
+}
+@keyframes animate{
+  0%{
+    width: 100px;
+  }
+  50%{
+    width: 200px;
+  }
+  100%{
+    width: 100px;
+  }
+}
+.top-content{
+  background-color: rgb(243,243,243);
+  width: 100%;
+  margin: 20px auto 20px auto;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px lightgray;
+}
+h3{
+  height: 100%;
+  background-color: lightgray;
+  line-height: 60px;
+  padding: 0 50px;
+  color: white;
+}
+.container{
+  margin-top: 100px;
+  width: 100%;
+  text-align: center;
+}
+label{
+  display: inline-block;
+  height: 100%;
+  padding: 0 2px;
+  margin: 0 30px;
+  line-height: 60px;
+  font-size: 18px;
+  color: gray;
+  cursor: pointer;
+  transition: .5s;
+}
+label:hover{
+  color: black;
+}
+h2{
+  height: 100%;
+  line-height: 600px;
+  padding: 0 50px;
+  color: white;
+}
+.wrapper{
+  margin: 150px auto;
+  width: 70%;
+}
+.text-box{
+  color: #fff;
+}
+.text-box h2{
+  font-size: 42px;
+  position: absolute;
+  left: 900px;
+  bottom: 5px;
+
+}
+.text-box p{
+  font-size: 16px;
+  position: absolute;
+  left: 880px;
+  width: 600px;
+  top: 400px;
+}
+input{
+  display: none;
+}
+
+.logo img {
+  width: 200px; /* Adjust the width of the logo as needed */
+  height: 40 /* Maintain aspect ratio */
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  padding: 0 5%;
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  background-color: #012E4D !important; /* Set default background color */
+transition: background-color 0.3s ease;
+max-width: 100%;
+z-index: -1;
+}
+.scrolled {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 40px;
+  
+}
+header nav {
+  display: flex;
+  gap: 30px;
+  padding-right: 100px;
+}
+header nav a{
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+  
+  color: #ffffff !important;
+  padding: 6px 15px;
+  border-radius: 20px;
+  transition: .5s;
+
+
+}
+header nav a:hover,header nav a:active{
+  background: #F57B32;
+  color: white;
+}
+header nav:hover >a:not(:hover){
+  background: none;
+}
+.icons {
+  padding-right: 200px;
+}
+header .icons a{
+  font-size: 25px;
+  color: white !important;
+  padding-left: 25px;
+  transition: .5s;
+}
+header .icons a:hover{
+  color: #F57B32;
+}
+/* Mobile Menu */
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+  padding-right: 40px;
+}
+.Micons a{
+  top: 40px;
+  color: #012E4D;
+  position: absolute;
+  left: 320px;
+  font-size: 25px !important;
+  
+}
+
+
+#hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: black;
+  margin: 6px 0;
+  transition: 0.4s;
+  
+}
+
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+ z-index: 1000;
+
+}
+
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 80px; /* Adjust this value based on your header height */
+  right: 0;
+  height: calc(100vh - 100px); /* Adjust this value based on your header height */
+  width: 100%;
+  background-color: #fffeff;
+  z-index: 1000;
+  overflow-x: hidden;
+  overflow-y: auto; /* Add this to enable scrolling if the menu items exceed the height */
+  z-index: 10000000;
+}
+
+
+.mobile-menu li {
+  margin-bottom: 10px;
+  padding-top: 50px;
+  padding-left: 150px;
+  
+}
+ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+ul a {
+  color: black;
+}
+
+ul li {
+  padding: 5px;
+  margin-left: 10px;
+}
+
+ul li:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+
+
+/* Header End */
+
+footer{
+  background-color: #012E4D;
+  display: flex;
+  align-items: center;
+  min-height: 30vh;
+  background-position: center;
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+  overflow-y: auto;
+  max-width: 100%;
+  position: relative;
+}
+.footerContainer{
+  width: 100%;
+  padding: 70px 30px 20px ;
+}
+.socialIcons{
+  display: flex;
+  justify-content: center;
+}
+.socialIcons a{
+  text-decoration: none;
+  padding:  10px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 50%;
+}
+.socialIcons a i{
+  font-size: 2em;
+  color: #F57B32;
+  opacity: 0,9;
+}
+/* Hover affect on social media icon */
+.socialIcons a:hover{
+  background-color: #111;
+  transition: 0.5s;
+}
+.socialIcons a:hover i{
+  color: white;
+  transition: 0.5s;
+}
+.footerNav{
+  margin: 30px 0;
+}
+.footerNav ul{
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+.footerNav ul li a{
+  color:white;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transition: 0.5s;
+
+}
+.footerNav ul li a:hover{
+  color: #F57B32;
+}
+.footerBottom{
+
+  background-color: #012E4D;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  max-width: 100%;
+  width: 100%;
+  height: 2.5vh;
+  padding-bottom: 50px;
+}
+.footerBottom p{
+  color: white;
+  margin-left: 650px;
+}
+.designerGroup{
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0px 5px;
+}
+
+
+/* --------- For Mobile ------ */
+
+/* Header */
+@media only screen and (min-width: 769px) {
+  .Micons{
+      display: none; /* Hide the div on desktop screens */
+  }
+} 
+/* Media query for mobile devices */
+@media only screen and (max-width: 768px) {
+  header nav {
+      display: none;
+  }
+  .icons {
+      display: none;
+  }
+  #hamburger-icon {
+      display: block;
+  }
+
+}
+/* Footer  */
+@media (max-width: 768px){
+  .footerNav ul{
+      flex-direction: column;
+  } 
+  .footerNav ul li{
+      width:100%;
+      text-align: center;
+      margin: 10px;
+  }
+  .socialIcons a{
+      padding: 8px;
+      margin: 4px;
+  }
+}
+
+/* Footer  */

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.2.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" crossorigin="anonymous">
+</head>
+<body>
+    <header id="header">
+        <div class="logo">
+            <a href="../Home/home.html"><img src="MarineCarelight.png" alt="Logo"></a>
+          </div>
+        <nav>
+            <a href="../Home/home.html">Home</a>
+            <a href="../Shop/index.html">Shop</a>
+            <a href="../About us/team.html">About us</a>
+            <a href="../Gallery/gallery.html">Gallery</a>
+
+        </nav>
+        <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="../Shop/cart.html" class="fas fa-shopping-cart"></a>
+            <a href="../User-Prof/User_prof.html" class="fas fa-user"></a>
+        </div>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <div class="Micons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+        </div>
+        <ul class="mobile-menu">
+            <li><a href="/home">Home</a></li>
+            <li><a href="/products">Products</a></li>
+            <li><a href="/about">About</a></li>
+            <li id="login"><a href="/login" >Login</a></li>
+            <li id="signup"><a href="/signup">Signup</a></li>
+          </ul>
+    
+    
+           
+    </header>
+    <input type="radio" name="gallery" id="all" checked>
+    <input type="radio" name="gallery" id="sf_jf" > 
+    <input type="radio" name="gallery" id="fish" > 
+    <input type="radio" name="gallery" id="tur_shel" > 
+    <input type="radio" name="gallery" id="mam" >  
+    <div>
+    <div class="container">
+    <h1>Life in the Ocean</h1>
+    <div class="top-content">
+        <h3>Gallery</h3>
+        <label for="all">All photos</label>
+        <label for="sf_jf">Jelly Fish and Star Fish</label>
+        <label for="fish">Fish</label>
+        <label for="tur_shel">Turtles and shellfish</label>
+        <label for="mam">Mammals</label>
+    </div></div></div>
+    <div class="full-img" id="fullImgBox_fish">
+        <div class="wrapper">
+        <img src="" id="fullImg_fish" alt="Full Image">
+        <div class="text-box">
+        <h2>Fish in the Ocean</h2>
+        <p>
+            Fish in the ocean comprise a fascinating and diverse group of creatures that play a crucial role in marine ecosystems. 
+            From the tiny, colorful clownfish darting among coral reefs to the massive, majestic blue whales cruising the open ocean, fish come in all shapes and sizes. 
+            They serve as both predator and prey, contributing to the intricate balance of ocean life. 
+            Some species, like tuna and salmon, are vital for human consumption, sustaining coastal communities around the world. 
+            However, overfishing and habitat destruction threaten many fish populations, 
+            underscoring the importance of sustainable fishing practices and marine conservation efforts 
+            to protect these valuable marine resources for future generations.</p></div></div>
+        <span onclick="closeFullImg_fish()">&times;</span>
+    </div>
+    <div class="full-img" id="fullImgBox_mam">
+        <div class="wrapper">
+        <img src="" id="fullImg_mam" alt="Full Image">
+        <div class="text-box">
+        <h2>Mammals</h2>
+        <p>
+            Mammals in the ocean represent some of the most iconic and captivating creatures on the planet.
+             From the playful dolphins dancing in the waves to the majestic humpback whales breaching the surface, 
+             these marine mammals display remarkable intelligence and adaptability to their watery environment. 
+             Some, like seals and sea lions, divide their time between land and sea, while others, such as whales and dolphins, 
+             spend their entire lives in the ocean. These mammals exhibit complex social behaviors, 
+             communicate through intricate vocalizations, and showcase remarkable hunting techniques. 
+             Despite their prowess, marine mammals face numerous threats, including pollution, habitat degradation, and entanglement in fishing gear. 
+             Conservation efforts are essential to safeguarding these incredible creatures and preserving the health of our oceans.
+            Protecting its biodiversity is vital for our planet's health and future.</p></div></div>
+        <span onclick="closeFullImg_mam()">&times;</span>
+    </div>
+    <div class="full-img" id="fullImgBox_jf">
+        <div class="wrapper">
+        <img src="" id="fullImg_jf" alt="Full Image">
+        <div class="text-box">
+        <h2>Jelly Fish</h2>
+        <p>
+            Jellyfish and starfish, though seemingly delicate, play crucial roles in the intricate tapestry of ocean life. 
+            Jellyfish, with their mesmerizing bell-shaped bodies and trailing tentacles, drift gracefully through the water, 
+            often pulsating with ethereal bioluminescence. Despite their serene appearance, 
+            some species of jellyfish possess potent stinging cells used for hunting prey. 
+            </p></div></div>
+        <span onclick="closeFullImg_jf()">&times;</span>
+    </div>
+    <div class="full-img" id="fullImgBox_sf">
+        <div class="wrapper">
+        <img src="" id="fullImg_sf" alt="Full Image">
+        <div class="text-box">
+        <h2>Star Fish</h2>
+        <p>
+            Starfish, on the other hand, showcase remarkable regenerative abilities and come in a dazzling array of shapes and colors. 
+            These fascinating creatures, also known as sea stars, use their tube feet to pry open shells and feed on mollusks and other small marine organisms.
+            Despite their distinct characteristics, both jellyfish and starfish face threats from environmental factors such as pollution and climate change. 
+            Understanding and conserving these creatures are essential for maintaining the delicate balance of ocean ecosystems.</p></div></div>
+        <span onclick="closeFullImg_sf()">&times;</span>
+    </div>
+    <div class="full-img" id="fullImgBox_tur">
+        <div class="wrapper">
+        <img src="" id="fullImg_tur" alt="Full Image">
+        <div class="text-box">
+        <h2>Turtles</h2>
+        <p>
+            Turtles, revered as ancient mariners of the sea, hold a special place in the tapestry of ocean life. 
+            These remarkable reptiles have navigated the world's oceans for millions of years, embodying resilience and adaptability.
+            With their distinctive shells and streamlined bodies, turtles gracefully glide through the water, symbolizing both strength and vulnerability.
+            From the gentle green sea turtle to the mighty leatherback, each species contributes to the intricate balance of marine ecosystems. 
+            However, turtles face numerous threats, including habitat destruction, pollution, and overfishing. 
+            Conservation efforts are crucial to safeguarding these magnificent creatures and ensuring their continued presence in our oceans for generations to come.
+            </p></div></div>
+        <span onclick="closeFullImg_tur()">&times;</span>
+    </div>
+    <div class="full-img" id="fullImgBox_shel">
+        <div class="wrapper">
+        <img src="" id="fullImg_shel" alt="Full Image">
+        <div class="text-box">
+        <h2>Shell fish</h2>
+        <p>
+            Shellfish encompass a diverse array of marine creatures, 
+            including mollusks like clams, oysters, and mussels, as well as crustaceans such as crabs, lobsters, and shrimp. 
+            These fascinating organisms play vital roles in ocean ecosystems and human culture alike.
+            With their hard outer shells providing protection, shellfish thrive in a variety of habitats, from rocky shores to sandy seabeds. 
+            They filter water, clean coastal environments, and serve as important food sources for humans and marine life alike.
+            However, shellfish populations face threats from pollution, habitat loss, and overexploitation. 
+            Sustainable management practices are essential to ensure the health of shellfish populations and the ecosystems they inhabit, 
+            preserving their ecological and cultural significance for future generations.</p></div></div>
+        <span onclick="closeFullImg_shel()">&times;</span>
+    </div>
+    <div class="img-gallery">
+        <div class="pic">
+            <img src="Images/imgp (47).jpg" data-category="tur_shel" class="gallery-img" onclick="openFullImg_shel(this.src)" alt="Gallery Image 47">
+            <img src="Images/imgp (48).jpg" data-category="tur_shel" class="gallery-img" onclick="openFullImg_shel(this.src)" alt="Gallery Image 48">
+            <img src="Images/imgp (55).jpg" data-category="tur_shel" class="gallery-img" onclick="openFullImg_shel(this.src)" alt="Gallery Image 55">
+            <img src="Images/imgp (49).jpg" data-category="sf_jf" class="gallery-img" onclick="openFullImg_sf(this.src)" alt="Gallery Image 49">
+            <img src="Images/imgp (51).jpg" data-category= "mam" class="gallery-img" onclick="openFullImg_mam(this.src)" alt="Gallery Image 51">
+            <img src="Images/imgp (54).jpg" data-category="sf_jf" class="gallery-img" onclick="openFullImg_sf(this.src)" alt="Gallery Image 54">
+            <img src="Images/imgp (64).jpg" data-category="fish" class="gallery-img" onclick="openFullImg_fish(this.src)" alt="Gallery Image 64">
+            <img src="Images/imgp (45).jpg" data-category= "mam" class="gallery-img" onclick="openFullImg_mam(this.src)" alt="Gallery Image 45">
+            <img src="Images/imgp (61).jpg" data-category="fish" class="gallery-img" onclick="openFullImg_fish(this.src)" alt="Gallery Image 61">
+            <img src="Images/imgp (16).jpg" data-category="sf_jf" class="gallery-img" onclick="openFullImg_jf(this.src)" alt="Gallery Image 16">
+        </div>
+        <div class="pic">
+            <img src="Images/imgp (1).jpg" data-category="fish" class="gallery-img" onclick="openFullImg_fish(this.src)" alt="Gallery Image 1">
+            <img src="Images/imgp (4).jpg" data-category="fish" class="gallery-img" onclick="openFullImg_fish(this.src)" alt="Gallery Image 4">
+            <img src="Images/imgp (9).jpg" data-category="fish" class="gallery-img" onclick="openFullImg_fish(this.src)" alt="Gallery Image 9">
+            <img src="Images/imgp (24).jpg" data-category= "mam" class="gallery-img" onclick="openFullImg_mam(this.src)" alt="Gallery Image 24">
+            <img src="Images/imgp (52).jpg" data-category="tur_shel" class="gallery-img" onclick="openFullImg_shel(this.src)" alt="Gallery Image 52">
+            <img src="Images/imgp (53).jpg" data-category="tur_shel"class="gallery-img" onclick="openFullImg_tur(this.src)" alt="Gallery Image 53">
+            <img src="Images/imgp (14).jpg" data-category="fish" class="gallery-img" onclick="openFullImg_fish(this.src)" alt="Gallery Image 14">
+            <img src="Images/imgp (19).jpg" data-category="sf_jf" class="gallery-img" onclick="openFullImg_jf(this.src)" alt="Gallery Image 19">
+            <img src="Images/imgp (17).jpg" data-category="sf_jf" class="gallery-img" onclick="openFullImg_sf(this.src)" alt="Gallery Image 17">
+            <img src="Images/imgp (18).jpg" data-category="sf_jf" class="gallery-img" onclick="openFullImg_sf(this.src)" alt="Gallery Image 18">
+            <img src="Images/imgp (39).jpg" data-category="fish" class="gallery-img" onclick="openFullImg_fish(this.src)" alt="Gallery Image 39">
+            <img src="Images/imgp (40).jpg" data-category="fish" class="gallery-img" onclick="openFullImg_fish(this.src)" alt="Gallery Image 40">
+            
+        </div>
+        <div class="pic">
+            <img src="Images/imgp (3).jpg" data-category="sf_jf" class="gallery-img" onclick="openFullImg_jf(this.src)" alt="Gallery Image 3">
+            <img src="Images/imgp (6).jpg" data-category="sf_jf" class="gallery-img" onclick="openFullImg_jf(this.src)" alt="Gallery Image 6">
+            <img src="Images/imgp (10).jpg" data-category="sf_jf" class="gallery-img" onclick="openFullImg_jf(this.src)" alt="Gallery Image 10">
+            <img src="Images/imgp (11).jpg" data-category="sf_jf" class="gallery-img" onclick="openFullImg_sf(this.src)" alt="Gallery Image 11">
+            <img src="Images/imgp (13).jpg" data-category="sf_jf" class="gallery-img" onclick="openFullImg_sf(this.src)" alt="Gallery Image 13">
+            <img src="Images/imgp (15).jpg" data-category= "mam" class="gallery-img" onclick="openFullImg_mam(this.src)" alt="Gallery Image 15">
+            <img src="Images/imgp (21).jpg" data-category="fish" class="gallery-img" onclick="openFullImg_fish(this.src)" alt="Gallery Image 21">
+            <img src="Images/imgp (37).jpg" data-category="tur_shel" class="gallery-img" onclick="openFullImg_shel(this.src)" alt="Gallery Image 37">
+            <img src="Images/imgp (38).jpg" data-category="tur_shel"class="gallery-img" onclick="openFullImg_tur(this.src)" alt="Gallery Image 38">
+            <img src="Images/imgp (29).jpg" data-category="fish" class="gallery-img" onclick="openFullImg_fish(this.src)" alt="Gallery Image 29">
+            <img src="Images/imgp (34).jpg" data-category="fish" class="gallery-img" onclick="openFullImg_fish(this.src)" alt="Gallery Image 34">
+            <img src="Images/imgp (36).jpg" data-category="fish" class="gallery-img" onclick="openFullImg_fish(this.src)" alt="Gallery Image 36">
+            <img src="Images/imgp (58).jpg" data-category="fish" class="gallery-img" onclick="openFullImg_fish(this.src)" alt="Gallery Image 58">
+            <img src="Images/imgp (63).jpg" data-category="fish" class="gallery-img" onclick="openFullImg_fish(this.src)" alt="Gallery Image 63">
+        </div>
+        <div class="pic">
+            <img src="Images/imgp (2).jpg" data-category="tur_shel" class="gallery-img" onclick="openFullImg_shel(this.src)" alt="Gallery Image 2">
+            <img src="Images/imgp (5).jpg" data-category="tur_shel" class="gallery-img" onclick="openFullImg_tur(this.src)" alt="Gallery Image 5">
+            <img src="Images/imgp (7).jpg" data-category="tur_shel"  class="gallery-img" onclick="openFullImg_shel(this.src)" alt="Gallery Image 7">
+            <img src="Images/imgp (31).jpg" data-category="tur_shel" class="gallery-img" onclick="openFullImg_tur(this.src)" alt="Gallery Image 31">
+            <img src="Images/imgp (32).jpg" data-category="tur_shel" class="gallery-img" onclick="openFullImg_tur(this.src)" alt="Gallery Image 32">
+            <img src="Images/imgp (12).jpg" data-category="sf_jf" class="gallery-img" onclick="openFullImg_jf(this.src)" alt="Gallery Image 12">
+            <img src="Images/imgp (20).jpg" data-category="sf_jf" class="gallery-img" onclick="openFullImg_jf(this.src)" alt="Gallery Image 20">
+            <img src="Images/imgp (43).jpg" data-category="fish" class="gallery-img" onclick="openFullImg_fish(this.src)" alt="Gallery Image 43">
+            <img src="Images/imgp (30).jpg" data-category= "mam" class="gallery-img" onclick="openFullImg_mam(this.src)" alt="Gallery Image 30">
+            <img src="Images/imgp (33).jpg" data-category= "mam" class="gallery-img" onclick="openFullImg_mam(this.src)" alt="Gallery Image 33">
+            <img src="Images/imgp (46).jpg" data-category="fish" class="gallery-img" onclick="openFullImg_fish(this.src)" alt="Gallery Image 46">
+            <img src="Images/imgp (62).jpg" data-category="fish" class="gallery-img" onclick="openFullImg_fish(this.src)" alt="Gallery Image 62">
+            <img src="Images/imgp (66).jpg" data-category="fish" class="gallery-img" onclick="openFullImg_fish(this.src)" alt="Gallery Image 66">
+            <img src="Images/imgp (22).jpg" data-category="sf_jf" class="gallery-img" onclick="openFullImg_jf(this.src)" alt="Gallery Image 22">
+            <img src="Images/imgp (23).jpg" data-category="sf_jf" class="gallery-img" onclick="openFullImg_jf(this.src)" alt="Gallery Image 23">
+            <img src="Images/imgp (26).jpg" data-category="sf_jf" class="gallery-img" onclick="openFullImg_jf(this.src)" alt="Gallery Image 26">
+            <img src="Images/imgp (59).jpg" data-category="fish" class="gallery-img" onclick="openFullImg_fish(this.src)" alt="Gallery Image 59">
+            
+        </div>
+        <div class="pic">
+            <img src="Images/imgp (8).jpg" data-category= "mam" class="gallery-img" onclick="openFullImg_mam(this.src)" alt="Gallery Image 8">
+            <img src="Images/imgp (27).jpg" data-category= "mam" class="gallery-img" onclick="openFullImg_mam(this.src)" alt="Gallery Image 27">
+            <img src="Images/imgp (28).jpg" data-category="sf_jf" class="gallery-img" onclick="openFullImg_sf(this.src)" alt="Gallery Image 28">
+            <img src="Images/imgp (67).jpg" data-category="fish" class="gallery-img" onclick="openFullImg_fish(this.src)" alt="Gallery Image 27">
+            <img src="Images/imgp (35).jpg" data-category="sf_jf" class="gallery-img" onclick="openFullImg_jf(this.src)" alt="Gallery Image 35">
+            <img src="Images/imgp (41).jpg" data-category="sf_jf" class="gallery-img" onclick="openFullImg_jf(this.src)" alt="Gallery Image 41">
+            <img src="Images/imgp (56).jpg" data-category="tur_shel" class="gallery-img" onclick="openFullImg_tur(this.src)" alt="Gallery Image 56">
+            <img src="Images/imgp (25).jpg" data-category="sf_jf" class="gallery-img" onclick="openFullImg_jf(this.src)" alt="Gallery Image 25">
+            <img src="Images/imgp (42).jpg" data-category="sf_jf" class="gallery-img" onclick="openFullImg_jf(this.src)" alt="Gallery Image 42">
+            <img src="Images/imgp (44).jpg" data-category="sf_jf" class="gallery-img" onclick="openFullImg_jf(this.src)" alt="Gallery Image 44">
+            <img src="Images/imgp (60).jpg" data-category="fish" class="gallery-img" onclick="openFullImg_fish(this.src)" alt="Gallery Image 60">
+    
+        </div>
+ 
+    </div></body>
+   
+
+    <div class="bubbles">
+        <img src="bubble.png" alt="Bubble">
+        <img src="bubble.png" alt="Bubble">
+        <img src="bubble.png" alt="Bubble">
+        <img src="bubble.png" alt="Bubble">
+        <img src="bubble.png" alt="Bubble">
+        <img src="bubble.png" alt="Bubble">
+        <img src="bubble.png" alt="Bubble">
+    </div>
+    <footer>
+    
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-google-plus"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="footerNav">
+                <ul><li><a href="../Home/home.html">Home</a></li>
+                    <li><a href="../Shop/index.html">Shop</a></li>
+                    <li><a href="../Sitemap/sitemap.html">Site-Map</a></li>
+                    <li><a href="../Blog/blog.html">Blog</a></li>
+                    <li><a href="../Feedback/feedback.html">Feedback</a></li>
+                </ul>
+            </div>
+            
+        </div>
+    </footer>
+
+    <div class="footerBottom">
+        <p>Copyright &copy;2024  Designed by <span class="designerGroup">Group 11 | Group 8 </span></p>
+     </div>
+      
+    <script src="gallery.js"></script>
+    <script src="home.js"></script>
+
+</body>
+</html>
